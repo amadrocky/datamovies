@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="page">
     <Home />
   </div>
 </template>
@@ -17,8 +17,8 @@ export default {
 </script>
 
 <style>
-#app {
-  background-image: url("/assets/astronomy-1867616_1920.jpg");
+#page {
+  background-image: url("~@/assets/astronomy-1867616_1920.jpg");
   background-size: cover;
 }
 </style>

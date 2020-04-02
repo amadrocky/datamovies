@@ -6,7 +6,7 @@
         <b-button variant="outline-success" class="my-2 my-sm-0" type="submit">Search</b-button>
       </b-nav-form>
     </b-navbar>
-    <b-container>
+    <b-container class="movieBlock p-3 my-3 mbs-3">
       <div id="info" v-if="infos !== null">
         <b-row v-if="infos.Title" class="pt-5">
           <b-col>
@@ -35,11 +35,11 @@
         </div>
       </div>
       <b-alert
-          v-else
-          variant="primary"
-          class="text-center mt-5"
-          show
-        >Veuillez executer une recherche</b-alert>
+        v-else
+        variant="primary"
+        class="text-center mt-5"
+        show
+      >Veuillez executer une recherche</b-alert>
     </b-container>
   </div>
 </template>
@@ -71,5 +71,10 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
+  .movieBlock {
+    background-color: rgba(17, 16, 16, 0.6);
+    border-radius: 5px;
+    color: white;
+  }
 </style>
